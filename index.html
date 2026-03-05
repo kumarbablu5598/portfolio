@@ -21,18 +21,111 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 
 
 <style>
 
 /*======================================
-//--//-->   ABOUT
+//--//-->   MOBILE FIRST RESPONSIVE
 ======================================*/
 
+/* ========== TYPOGRAPHY RESPONSIVE ========== */
+@media (max-width: 576px) {
+  h1, .h1 { font-size: 1.75rem; }
+  h2, .h2 { font-size: 1.5rem; }
+  h3, .h3 { font-size: 1.25rem; }
+  h4, .h4 { font-size: 1.1rem; }
+  p { font-size: 0.95rem; line-height: 1.6; }
+  .lead { font-size: 1rem; }
+}
+
+/* ========== HERO SECTION RESPONSIVE ========== */
+.hero {
+  min-height: auto;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .one-third {
+    min-height: 300px !important;
+    order: 1;
+  }
+  .one-forth {
+    order: 2;
+    min-height: auto;
+    text-align: center;
+  }
+  .slider-text h1 {
+    font-size: 1.75rem;
+  }
+  .slider-text h2 {
+    font-size: 1.25rem;
+  }
+  .slider-text .btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-item {
+    min-height: auto;
+  }
+  .one-third {
+    min-height: 250px !important;
+  }
+  .slider-text h1 {
+    font-size: 1.5rem;
+  }
+  .slider-text h2 {
+    font-size: 1rem;
+  }
+}
+
+/* ========== ABOUT SECTION RESPONSIVE ========== */
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-mf .box-shadow-full {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .img-about {
+    margin-bottom: 2rem;
+  }
+  .about-info {
+    padding: 1rem 0.5rem;
+  }
+  .about-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .title-s {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-mf .box-shadow-full {
+    padding: 1rem;
+  }
+  .about-img {
+    margin-bottom: 1rem;
+  }
+  .about-img img {
+    margin-left: 0;
+  }
+  .overlay .row {
+    flex-direction: column;
+  }
+  .col-sm-6.col-md-5,
+  .col-sm-6.col-md-7 {
+    width: 100% !important;
+  }
 }
 
 .about-mf .about-img {
@@ -43,9 +136,13 @@
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .about-mf .about-img img {
+    margin-left: 0;
+  }
+}
 
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -56,8 +153,175 @@
   background-color: #ffbd39;
 }
 
+@media (max-width: 480px) {
+  .skill-mf .progress {
+    margin: 0.3rem 0 0.8rem 0;
+    height: 0.5rem;
+  }
+  .skill-mf span {
+    font-size: 0.85rem;
+  }
+}
 
-/* Animation styles */
+/* ========== PROJECTS SECTION RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .col-md-4.d-flex {
+    margin-bottom: 2rem;
+  }
+  .blog-entry {
+    width: 100%;
+  }
+  .block-20 {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-20 {
+    min-height: 200px;
+  }
+  .blog-entry .text {
+    padding: 1rem 0;
+  }
+  .blog-entry h2,
+  .blog-entry h3 {
+    font-size: 1.1rem;
+  }
+  .blog-entry p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
+/* ========== CONTACT SECTION RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .contact-info {
+    margin-bottom: 1.5rem;
+  }
+  .col-md-6.col-lg-3 {
+    margin-bottom: 1.5rem;
+  }
+  .box {
+    padding: 1.5rem 1rem !important;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-6.col-lg-3 {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  .box {
+    padding: 1rem 0.75rem !important;
+    text-align: center;
+  }
+  .box h3 {
+    font-size: 1rem;
+  }
+  .box p {
+    font-size: 0.85rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .ftco-footer-social {
+    flex-wrap: wrap;
+  }
+  .ftco-footer-social li {
+    margin: 0.25rem 0.5rem;
+  }
+}
+
+/* ========== NAVBAR RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+  .collapse {
+    margin-top: 1rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+}
+
+/* ========== COUNTER/STATS SECTION RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .counter-wrap {
+    margin-bottom: 2rem;
+  }
+  .block-18 .text strong {
+    font-size: 1.5rem;
+  }
+  .number {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-wrap {
+    margin-bottom: 1.5rem;
+  }
+  .block-18 {
+    padding: 1rem;
+  }
+  .block-18 .text strong {
+    font-size: 1.25rem;
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 0.25rem;
+  }
+}
+
+/* ========== BUTTON RESPONSIVE ========== */
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem;
+  }
+  .btn.btn-primary,
+  .btn.btn-white {
+    padding: 0.6rem 1.5rem !important;
+  }
+}
+
+/* ========== CONTAINER & SPACING RESPONSIVE ========== */
+@media (max-width: 480px) {
+  .ftco-section {
+    padding: 2rem 0;
+  }
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+  .pb-5 {
+    padding-bottom: 1.5rem !important;
+  }
+  .pt-5 {
+    padding-top: 1.5rem !important;
+  }
+}
+
+/* ========== ANIMATION styles ========== */
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -68,9 +332,20 @@
   animation: typing 3s steps(20, end) infinite;
 }
 
+@media (max-width: 768px) {
+  #typing-animation {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  #typing-animation {
+    font-size: 18px;
+  }
+}
+
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -94,6 +369,200 @@
   }
   to {
     width: 0;
+  }
+}
+
+/* ========== RESUME SECTION RESPONSIVE ========== */
+.resume-wrap {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #ffbd39;
+}
+
+@media (max-width: 768px) {
+  .resume-wrap {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .resume-wrap .date {
+    font-size: 0.85rem;
+  }
+  .resume-wrap h2 {
+    font-size: 1.1rem;
+  }
+  .resume-wrap .position {
+    font-size: 0.9rem;
+  }
+  .resume-wrap p,
+  .resume-wrap ul {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-wrap {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-left-width: 3px;
+  }
+  .resume-wrap .date {
+    font-size: 0.8rem;
+  }
+  .resume-wrap ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ========== RESPONSIVE TEXT UTILITIES ========== */
+@media (max-width: 768px) {
+  .heading-section {
+    margin-bottom: 1.5rem;
+  }
+  .heading-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .heading-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-section {
+    margin-bottom: 1rem;
+  }
+  .heading-section h2 {
+    font-size: 1.25rem;
+  }
+  .heading-section h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* ========== IMAGE RESPONSIVE ========== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.block-20 {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .block-20 {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-20 {
+    height: 200px;
+  }
+}
+
+/* ========== FLEX UTILITIES MOBILE ========== */
+@media (max-width: 480px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+  .flex-column-sm {
+    flex-direction: column !important;
+  }
+}
+
+/* ========== LINKS & HOVER EFFECTS ========== */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+}
+
+/* ========== ZOOM EFFECT MOBILE ========== */
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .zoom-effect:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* ========== FOOTER SECTION RESPONSIVE ========== */
+.ftco-footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ftco-footer-social li {
+  margin: 0.5rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: #fff;
+}
+
+.social-icon:hover {
+  fill: #ffbd39;
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  .ftco-footer-social {
+    gap: 0.5rem;
+  }
+  .ftco-footer-social li {
+    margin: 0.25rem 0.5rem;
+  }
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* ========== SCROLL BEHAVIOR ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== ORIENTATION RESPONSIVE ========== */
+@media (max-width: 480px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+  }
+  .one-third {
+    min-height: 200px !important;
+  }
+}
+
+/* ========== RETINA DISPLAY SUPPORT ========== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .social-icon {
+    stroke-width: 0.5px;
   }
 }
 
@@ -320,7 +789,7 @@
 		<br>
 		
 		<div class="row">
-				<div class="col-md-6">
+				<div class="col-12 col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">09/2024-Present</span>
 						<h2>Senior Software Engineer At</h2>
@@ -328,18 +797,18 @@
 						<p class="mt-4">
 							<ul>
 								<li>Contributing to Honeywell's industrial automation and IIoT solutions as part of a distributed agile team.</li>
-								<li>Designing and developing backend microservices using Java, Spring Boot ,and MySQL.</li>
+								<li>Designing and developing backend microservices using Java, Spring Boot, and MySQL.</li>
 								<li>Implementing asynchronous messaging patterns using Kafka or RabbitMQ.</li>
 								<li>Writing unit and integration tests to ensure code quality and reliability.</li>
 								<li>Maintained over 90% code coverage using JUnit and MOCKITO while integrating SonarQube for static code analysis and vulnerability detection.</li>
-                                <li>Using tools like Git , JIRA , Docker , and Jenkins in a CI/CD environment.</li>
+                                <li>Using tools like Git, JIRA, Docker, and Jenkins in a CI/CD environment.</li>
 							</ul>
 						</p>
 					</div>
 
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-12 col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">01/2021-09/2024</span>
 						<h2>Software Engineer At</h2>
@@ -366,7 +835,7 @@
 		<br>
 		
 			<div class="row">
-    			<div class="col-md-6">
+    			<div class="col-12 col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2016-2020</span>
     					<h2>Bachelor of Technology</h2>
@@ -375,7 +844,7 @@
     				</div>
     			</div>
 
-    			<div class="col-md-6">
+    			<div class="col-12 col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2013-2015</span>
     					<h2>Senior Secondary Education</h2>
@@ -407,34 +876,34 @@
              <p>Below are some of my key projects demonstrating Java, Spring Boot, and Microservices expertise.</p>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+        <div class="row d-flex flex-wrap">
+          <div class="col-12 col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end w-100">
               <a href="https://github.com/kumarbablu5598/Hotel-Rating-System" target="_blank" rel="noopener" class="block-20 zoom-effect" style="background-image: url('images/proj1.jpg');">
               </a>
-              <div class="text mt-3 float-right d-block">
+              <div class="text mt-3 float-right d-block w-100">
 
                 <h2 class="heading"><a href="https://github.com/kumarbablu5598/Hotel-Rating-System" target="_blank" rel="noopener">Hotel-Rating-System</a></h2>
                 <p>The Hotel Rating and Review System is a microservices-based application developed using Java and Spring Boot. This project allows users to rate and review hotels, view ratings and reviews, and manage hotel information. The system will be designed to handle high traffic and provide a scalable, efficient, and user- friendly platform .</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+          <div class="col-12 col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end w-100">
               <a href="https://github.com/kumarbablu5598/Fs-09_Assignment/tree/instagram" target="_blank" rel="noopener" class="block-20 zoom-effect" style="background-image: url('images/proj2.png');">
               </a>
-              <div class="text mt-3 float-right d-block">
+              <div class="text mt-3 float-right d-block w-100">
 
                 <h2 class="heading"><a href="https://github.com/kumarbablu5598/Fs-09_Assignment/tree/instagram" target="_blank" rel="noopener">Instagram Backend</a></h2>
                 <p>This project is a basic web application that allows users to sign in, sign up, and manage their profile information. Additionally, users can create posts and view posts created by other users. The application uses authentication tokens to secure user data and ensure that only authenticated users can access certain features of the application .</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+          <div class="col-12 col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="blog-entry w-100">
               <a href="https://github.com/kumarbablu5598/MusicStream" target="_blank" rel="noopener" class="block-20 zoom-effect" style="background-image: url('images/proj3.png');">
               </a>
-              <div class="text mt-3 float-right d-block">
+              <div class="text mt-3 float-right d-block w-100">
 
                 <h3 class="heading"><a href="https://github.com/kumarbablu5598/MusicStream" target="_blank" rel="noopener">Music Streaming Service</a></h3>
                 <p>This project is a music streaming service API that allows two types of users: Normal and Admin users. Admin users have the authority to perform CRUD (Create, Read, Update, and Delete) operations on songs, while normal users can only add songs to their playlists and perform CRUD operations on their playlists.</p>
@@ -466,7 +935,7 @@
 				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate"> <a href="https://www.hackerrank.com/profile/kumarbablu55981" target="_blank" rel="noopener"><svg class="social-icon" viewBox="0 0 32 32"><path d="M16 0c1.714 0 13 6.516 13.854 8 0.859 1.484 0.859 14.516 0 16s-12.141 8-13.854 8c-1.714 0-13-6.516-13.859-8-0.854-1.484-0.854-14.516 0-16 0.859-1.484 12.146-8 13.859-8zM19.063 9.068c-0.193 0-0.349 0.151-0.349 0.344v5.167h-5.427v-5.37h0.932c0.188 0 0.339-0.151 0.339-0.344 0-0.125-0.068-0.234-0.161-0.292l-2.099-2.010c-0.063-0.089-0.188-0.146-0.302-0.146-0.109 0-0.214 0.057-0.276 0.141l-2.24 2.016c-0.094 0.063-0.161 0.167-0.161 0.292 0 0.188 0.151 0.344 0.344 0.344h0.938l0.010 13.38c0 0.193 0.146 0.344 0.339 0.344h1.99c0.188 0 0.344-0.151 0.344-0.344v-5.339h5.432v5.536h-0.932c-0.193 0-0.344 0.156-0.344 0.344 0 0.125 0.068 0.234 0.161 0.292l2.104 2.016c0.057 0.083 0.188 0.146 0.302 0.146s0.208-0.063 0.276-0.146l2.24-2.016c0.094-0.057 0.161-0.167 0.161-0.292 0-0.188-0.156-0.344-0.344-0.344h-0.938l-0.010-13.375c0-0.198-0.151-0.349-0.339-0.349h-1.99z"/></svg></a></li>
 					   <li class="ftco-animate"> <a href="https://leetcode.com/u/kumarbablu5598/" target="_blank" rel="noopener"><svg class="social-icon" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg></a></li>
-					   <li class="ftco-animate"> <a href="https://www.geeksforgeeks.org/user/bablukumar5598/" target="_blank" rel="noopener"><svg class="social-icon"viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.79 3.79 0 0 1-2.135-2.078 3.571 3.571 0 0 1-.13-.353h7.418a4.26 4.26 0 0 1-.368 1.008zm-11.99-.654a3.793 3.793 0 0 1-2.134 2.078 4.51 4.51 0 0 1-3.117.016 3.7 3.7 0 0 1-1.104-.695 2.652 2.652 0 0 1-.564-.745 4.221 4.221 0 0 1-.368-1.006H9.59c-.038.12-.08.238-.13.352zm14.501-1.758a3.849 3.849 0 0 0-.082-.475l-9.634-.008a3.932 3.932 0 0 1 1.143-2.348c.363-.35.79-.625 1.26-.809a3.97 3.97 0 0 1 4.484.957l1.521-1.49a5.7 5.7 0 0 0-1.922-1.357 6.283 6.283 0 0 0-2.544-.49 6.35 6.35 0 0 0-2.405.457 6.007 6.007 0 0 0-1.963 1.276 6.142 6.142 0 0 0-1.325 1.94 5.862 5.862 0 0 0-.466 1.864h-.063a5.857 5.857 0 0 0-.467-1.865 6.13 6.13 0 0 0-1.325-1.939A6 6 0 0 0 8.21 6.34a6.698 6.698 0 0 0-4.949.031A5.708 5.708 0 0 0 1.34 7.73l1.52 1.49a4.166 4.166 0 0 1 4.484-.958c.47.184.898.46 1.26.81.368.36.66.792.859 1.268.146.344.242.708.285 1.08l-9.635.008A4.714 4.714 0 0 0 0 12.457a6.493 6.493 0 0 0 .345 2.127 4.927 4.927 0 0 0 1.08 1.783c.528.56 1.17 1 1.88 1.293a6.454 6.454 0 0 0 2.504.457c.824.005 1.64-.15 2.404-.457a5.986 5.986 0 0 0 1.964-1.277 6.116 6.116 0 0 0 1.686-3.076h.273a6.13 6.13 0 0 0 1.686 3.077 5.99 5.99 0 0 0 1.964 1.276 6.345 6.345 0 0 0 2.405.457 6.45 6.45 0 0 0 2.502-.457 5.42 5.42 0 0 0 1.882-1.293 4.928 4.928 0 0 0 1.08-1.783A6.52 6.52 0 0 0 24 12.457a4.757 4.757 0 0 0-.039-.554z"/></svg></a></li>
+					   <li class="ftco-animate"> <a href="https://www.geeksforgeeks.org/user/bablukumar5598/" target="_blank" rel="noopener"><svg class="social-icon" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.79 3.79 0 0 1-2.135-2.078 3.571 3.571 0 0 1-.13-.353h7.418a4.26 4.26 0 0 1-.368 1.008zm-11.99-.654a3.793 3.793 0 0 1-2.134 2.078 4.51 4.51 0 0 1-3.117.016 3.7 3.7 0 0 1-1.104-.695 2.652 2.652 0 0 1-.564-.745 4.221 4.221 0 0 1-.368-1.006H9.59c-.038.12-.08.238-.13.352zm14.501-1.758a3.849 3.849 0 0 0-.082-.475l-9.634-.008a3.932 3.932 0 0 1 1.143-2.348c.363-.35.79-.625 1.26-.809a3.97 3.97 0 0 1 4.484.957l1.521-1.49a5.7 5.7 0 0 0-1.922-1.357 6.283 6.283 0 0 0-2.544-.49 6.35 6.35 0 0 0-2.405.457 6.007 6.007 0 0 0-1.963 1.276 6.142 6.142 0 0 0-1.325 1.94 5.862 5.862 0 0 0-.466 1.864h-.063a5.857 5.857 0 0 0-.467-1.865 6.13 6.13 0 0 0-1.325-1.939A6 6 0 0 0 8.21 6.34a6.698 6.698 0 0 0-4.949.031A5.708 5.708 0 0 0 1.34 7.73l1.52 1.49a4.166 4.166 0 0 1 4.484-.958c.47.184.898.46 1.26.81.368.36.66.792.859 1.268.146.344.242.708.285 1.08l-9.635.008A4.714 4.714 0 0 0 0 12.457a6.493 6.493 0 0 0 .345 2.127 4.927 4.927 0 0 0 1.08 1.783c.528.56 1.17 1 1.88 1.293a6.454 6.454 0 0 0 2.504.457c.824.005 1.64-.15 2.404-.457a5.986 5.986 0 0 0 1.964-1.277 6.116 6.116 0 0 0 1.686-3.076h.273a6.13 6.13 0 0 0 1.686 3.077 5.99 5.99 0 0 0 1.964 1.276 6.345 6.345 0 0 0 2.405.457 6.45 6.45 0 0 0 2.502-.457 5.42 5.42 0 0 0 1.882-1.293 4.928 4.928 0 0 0 1.08-1.783A6.52 6.52 0 0 0 24 12.457a4.757 4.757 0 0 0-.039-.554z"/></svg></a></li>
 				</ul>
               </div>
             </div>
@@ -510,9 +979,9 @@
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+        <div class="row d-flex contact-info mb-5 flex-wrap">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
@@ -520,8 +989,8 @@
 	            <p>Bengaluru, India</p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
           		</div>
@@ -529,17 +998,17 @@
 	            <p><a href="tel://9748658517">+91 9748658517</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="kumarbablu5598@gmail.com">kumarbablu5598@gmail.com</a></p>
+	            <p><a href="mailto:kumarbablu5598@gmail.com">kumarbablu5598@gmail.com</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center w-100">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
@@ -547,17 +1016,18 @@
 	            <p><a href="https://drive.google.com/file/d/1PRMUYVvMohxZh_pMjet6VrmL7lhZfqk_/view?usp=drive_link" target="_blank" rel="noopener">resumelink</a></p>
 	          </div>
           </div>
+        </div>
 
 		  <div class="container">
 			<br>
 			<br>
 			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
+				<div class="col-12 col-md-7 ftco-animate text-center">
 					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfc39OwyYpGaHHDEBsk32qS23ByLf0pAbUskTEEEzo_MHFqQ/viewform?usp=header" rel="noopener" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0 flex-wrap">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
 					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/bablu5598/" target="_blank" rel="noopener"><span class="icon-linkedin"></span></a></li>  
 					  <li class="ftco-animate"><a href="https://x.com/babluyadav_5598" target="_blank" rel="noopener"><span class="icon-twitter"></span></a></li>
@@ -566,8 +1036,9 @@
 					</ul>
 				<br>
 		   </div>
-   </div>
- </section>
+		</div>
+      </div>
+    </section>
 
 
  

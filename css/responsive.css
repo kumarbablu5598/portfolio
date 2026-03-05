@@ -1,0 +1,760 @@
+/* ================================================================
+   RESPONSIVE CSS FOR PORTFOLIO
+   Mobile-First Approach with Desktop Enhancements
+   ================================================================ */
+
+/* ================================================================
+   BREAKPOINTS REFERENCE
+   - Mobile: 0 - 480px (extra small devices)
+   - Tablet: 481px - 768px (small tablets)
+   - Desktop: 769px - 1024px (standard desktop)
+   - Large Desktop: 1025px+ (large screens)
+   ================================================================ */
+
+/* ================================================================
+   BASE MOBILE STYLES (0 - 480px)
+   ================================================================ */
+
+/* Typography */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  h1, .h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h2, .h2 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  h3, .h3 {
+    font-size: 1.1rem;
+  }
+
+  h4, .h4 {
+    font-size: 1rem;
+  }
+
+  h5, .h5 {
+    font-size: 0.95rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  /* Display Headings */
+  .display-1 {
+    font-size: 2.5rem;
+  }
+
+  .display-2 {
+    font-size: 2rem;
+  }
+
+  .display-3 {
+    font-size: 1.75rem;
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Spacing - Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .ftco-section {
+    padding: 2rem 0;
+  }
+
+  .row {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+  .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+  .col, .col-auto {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .mb-5 { margin-bottom: 1.5rem !important; }
+  .pb-5 { padding-bottom: 1.5rem !important; }
+  .pt-5 { padding-top: 1.5rem !important; }
+  .mt-5 { margin-top: 1.5rem !important; }
+
+  .mx-auto { margin-left: auto !important; margin-right: auto !important; }
+}
+
+/* Navbar - Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .navbar-toggler {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .collapse {
+    margin-top: 0.75rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.4rem 0 !important;
+    font-size: 0.9rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 0.25rem 0;
+  }
+}
+
+/* Hero Section - Mobile */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .one-third {
+    min-height: 250px !important;
+  }
+
+  .one-forth {
+    order: 2;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .slider-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .slider-text h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .slider-text .subheading {
+    font-size: 0.85rem;
+  }
+
+  .slider-text .btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+  }
+
+  #typing-animation {
+    font-size: 18px;
+    margin: 0.5rem 0;
+  }
+}
+
+/* About Section - Mobile */
+@media (max-width: 480px) {
+  .about-mf .box-shadow-full {
+    padding: 1rem;
+  }
+
+  .img-about {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-info {
+    padding: 0.75rem 0;
+  }
+
+  .about-info p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .title-s {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .overlay .row {
+    flex-direction: column;
+  }
+
+  .col-sm-6.col-md-5,
+  .col-sm-6.col-md-7 {
+    width: 100% !important;
+  }
+
+  .about-img img {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .skill-mf .progress {
+    margin: 0.3rem 0 0.8rem 0;
+    height: 0.5rem;
+  }
+
+  .skill-mf span {
+    font-size: 0.8rem;
+  }
+
+  .pull-right {
+    font-size: 0.8rem;
+  }
+}
+
+/* Projects Section - Mobile */
+@media (max-width: 480px) {
+  .block-20 {
+    min-height: 200px;
+  }
+
+  .blog-entry {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-entry .text {
+    padding: 0.75rem 0;
+  }
+
+  .blog-entry h2,
+  .blog-entry h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-entry p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  .zoom-effect:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Resume Section - Mobile */
+@media (max-width: 480px) {
+  .resume-wrap {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-left-width: 3px;
+  }
+
+  .resume-wrap .date {
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .resume-wrap h2 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .resume-wrap .position {
+    font-size: 0.8rem;
+  }
+
+  .resume-wrap p,
+  .resume-wrap ul {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-wrap ul li {
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+
+  .big-4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .underline {
+    height: 2px;
+    width: 50px;
+    background: #ffbd39;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Contact Section - Mobile */
+@media (max-width: 480px) {
+  .contact-info {
+    margin-bottom: 1rem;
+  }
+
+  .col-12.col-sm-6.col-md-6.col-lg-3 {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .box {
+    padding: 0.75rem !important;
+    text-align: center;
+  }
+
+  .box h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .box p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon span {
+    font-size: 1.5rem;
+  }
+
+  .ftco-footer-social {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .ftco-footer-social li {
+    margin: 0.25rem 0.4rem;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .normal-txt {
+    font-size: 0.8rem;
+  }
+}
+
+/* Buttons - Mobile */
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.85rem;
+    margin: 0.25rem;
+  }
+
+  .btn.btn-primary,
+  .btn.btn-white {
+    padding: 0.5rem 1.2rem !important;
+  }
+
+  .btn-outline-white {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.85rem;
+  }
+}
+
+/* ================================================================
+   TABLET STYLES (481px - 768px)
+   ================================================================ */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  h1, .h1 { font-size: 1.75rem; }
+  h2, .h2 { font-size: 1.5rem; }
+  h3, .h3 { font-size: 1.25rem; }
+  p { font-size: 0.95rem; }
+
+  .container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .ftco-section {
+    padding: 3rem 0;
+  }
+
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .one-third {
+    min-height: 350px !important;
+  }
+
+  .slider-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .slider-text h2 {
+    font-size: 1.25rem;
+  }
+
+  #typing-animation {
+    font-size: 24px;
+  }
+
+  .about-mf .box-shadow-full {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .col-md-4.d-flex,
+  .col-12.col-md-6.col-lg-4.d-flex {
+    margin-bottom: 1.5rem;
+  }
+
+  .block-20 {
+    min-height: 250px;
+  }
+
+  .contact-info {
+    margin-bottom: 1.5rem;
+  }
+
+  .col-12.col-sm-6.col-md-6.col-lg-3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .resume-wrap {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ================================================================
+   DESKTOP STYLES (769px - 1024px)
+   ================================================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: 700px;
+  }
+
+  .one-third {
+    min-height: 400px !important;
+  }
+
+  .slider-text h1 {
+    font-size: 2rem;
+  }
+
+  .slider-text h2 {
+    font-size: 1.5rem;
+  }
+
+  #typing-animation {
+    font-size: 28px;
+  }
+
+  .about-mf .box-shadow-full {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .block-20 {
+    min-height: 280px;
+  }
+
+  .resume-wrap {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ================================================================
+   LARGE DESKTOP STYLES (1025px+)
+   ================================================================ */
+
+@media (min-width: 1025px) {
+  .hero {
+    min-height: 800px;
+  }
+
+  .one-third {
+    min-height: 500px !important;
+  }
+
+  .slider-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .slider-text h2 {
+    font-size: 1.75rem;
+  }
+
+  #typing-animation {
+    font-size: 30px;
+  }
+
+  .about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .block-20 {
+    min-height: 300px;
+  }
+
+  .resume-wrap {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ================================================================
+   UTILITY CLASSES - RESPONSIVE
+   ================================================================ */
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+  .about-mf .about-img img {
+    margin-left: 0;
+  }
+}
+
+/* Responsive Text */
+@media (max-width: 480px) {
+  .text-center {
+    text-align: center;
+  }
+
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-right {
+    text-align: right;
+  }
+}
+
+/* Responsive Display */
+@media (max-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+/* ================================================================
+   ANIMATION & TRANSITIONS
+   ================================================================ */
+
+/* Smooth transitions */
+a, button, .btn {
+  transition: all 0.3s ease;
+}
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .zoom-effect:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .zoom-effect:hover {
+    transform: scale(1.01);
+  }
+}
+
+/* Typing animation */
+#typing-animation {
+  position: relative;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* ================================================================
+   SCROLL BEHAVIOR
+   ================================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================================================================
+   ACCESSIBILITY
+   ================================================================ */
+
+/* Focus states for keyboard navigation */
+a:focus, button:focus, .btn:focus {
+  outline: 2px solid #ffbd39;
+  outline-offset: 2px;
+}
+
+/* Touch-friendly buttons on mobile */
+@media (max-width: 768px) {
+  .btn, button, a.btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ================================================================
+   PRINT STYLES
+   ================================================================ */
+
+@media print {
+  .navbar, .navbar-expand-lg {
+    display: none;
+  }
+
+  .ftco-section {
+    page-break-inside: avoid;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* ================================================================
+   ORIENTATION SUPPORT
+   ================================================================ */
+
+@media (max-width: 480px) and (orientation: landscape) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .one-third {
+    min-height: 300px !important;
+  }
+
+  .slider-text h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ================================================================
+   HIGH DPI / RETINA DISPLAY SUPPORT
+   ================================================================ */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .social-icon {
+    stroke-width: 0.5px;
+  }
+}
+
