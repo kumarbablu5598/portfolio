@@ -2,7 +2,7 @@
 
 A personal portfolio website to showcase my projects, blog posts, and resume.
 
-[Link](https://github.com/kumarbablu5598/Portfolio-Website)
+[Link](https://github.com/kumarbablu5598/portfolio)
 
 ## 💡 Features
 
@@ -21,9 +21,8 @@ A personal portfolio website to showcase my projects, blog posts, and resume.
 - **Forms:** Formspree / EmailJS / Netlify Forms  
 
 
-## 📦 Installation
+## 📦 Clone the repo
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/kumarbablu5598/portfolio.git
-   portfolio - https://kumarbablu5598.github.io/portfolio/
+   - **git clone :** https://github.com/kumarbablu5598/portfolio.git  
+   - **portfolio link :** https://kumarbablu5598.github.io/portfolio/
+  
