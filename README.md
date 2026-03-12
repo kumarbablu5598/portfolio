@@ -25,5 +25,5 @@ A personal portfolio website to showcase my projects, blog posts, and resume.
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/kumarbablu5598/Portfolio-Website.git
-   cd portfolio-website
+   git clone https://github.com/kumarbablu5598/portfolio.git
+   portfolio - https://kumarbablu5598.github.io/portfolio/
